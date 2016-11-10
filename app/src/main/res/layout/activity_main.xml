@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ljy.myprogress.MainActivity">
+
+
+    <com.ljy.myprogress.CustomProgress
+        android:id="@+id/progress1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:max="100"
+        app:roundColor="@android:color/darker_gray"
+        app:roundProgressColor="@android:color/holo_red_dark"
+        app:roundWidth="10dp"
+        app:style="FILL"
+        app:textSize="20sp" />
+
+    <com.ljy.myprogress.CustomProgress
+        android:layout_marginTop="10dip"
+        android:id="@+id/progress2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:max="100"
+        app:roundColor="@android:color/darker_gray"
+        app:roundProgressColor="@android:color/holo_red_dark"
+        app:roundWidth="1dp"
+        app:style="STROKE"
+        app:textSize="20sp" />
+
+    <com.ljy.myprogress.CustomProgress
+        android:layout_marginTop="10dip"
+        android:id="@+id/progress3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:max="100"
+        app:roundColor="@android:color/darker_gray"
+        app:roundProgressColor="@android:color/holo_red_dark"
+        app:roundWidth="1dp"
+        app:style="FILL"
+        app:textSize="12sp" />
+</LinearLayout>
